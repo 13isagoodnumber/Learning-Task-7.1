@@ -1,0 +1,143 @@
+<canvas id="myCanvas2" width="350" height="400"></canvas>
+
+<script>
+	var canvas2 = document.getElementById("myCanvas2");
+	var ctx2 = canvas2.getContext("2d");
+	
+	// Draw the sun
+	ctx2.beginPath();
+	ctx2.arc(175, 200, 80, 0, 2 * Math.PI);
+	ctx2.fillStyle = "#ffd700"; // Gold color
+	ctx2.fill();
+	ctx2.closePath();
+
+	// Draw the sun rays
+	for (let i = 0; i < 12; i++) {
+		let angle = (i * 30) * (Math.PI / 180);
+		let rayEndX = 175 + 90 * Math.cos(angle);
+		let rayEndY = 200 + 90 * Math.sin(angle);
+
+		ctx2.beginPath();
+		ctx2.moveTo(175, 200);
+		ctx2.lineTo(rayEndX, rayEndY);
+		ctx2.strokeStyle = "#ffd700"; // Gold color
+		ctx2.lineWidth = 8;
+		ctx2.stroke();
+		ctx2.closePath();
+	}
+</script>
+
+<canvas id="myCanvas3" width="350" height="400"></canvas>
+
+<script>
+    var canvas3 = document.getElementById("myCanvas3");
+    var ctx3 = canvas3.getContext("2d");
+
+    // Draw a yellow rectangle
+    ctx3.beginPath();
+    ctx3.rect(50, 50, 200, 150);
+    ctx3.fillStyle = "#ffe553";
+    ctx3.fill();
+
+    // Draw a blue circle
+    ctx3.beginPath();
+    ctx3.arc(150, 250, 40, 0, 2 * Math.PI);
+    ctx3.fillStyle = "#53aaff";
+    ctx3.fill();
+
+    // Draw a green triangle
+    ctx3.beginPath();
+    ctx3.moveTo(250, 50);
+    ctx3.lineTo(300, 150);
+    ctx3.lineTo(200, 150);
+    ctx3.closePath();
+    ctx3.fillStyle = "#aaff96";
+    ctx3.fill();
+
+    // Draw a purple ellipse
+    ctx3.beginPath();
+    ctx3.ellipse(250, 300, 50, 30, 0, 0, 2 * Math.PI);
+    ctx3.fillStyle = "#aa85d4";
+    ctx3.fill();
+</script>
+
+<canvas id="myCanvas4" width="350" height="400"></canvas>
+
+<script>
+    var canvas4 = document.getElementById("myCanvas4");
+    var ctx4 = canvas4.getContext("2d");
+
+    // Draw a pink circle
+    ctx4.beginPath();
+    ctx4.arc(100, 100, 50, 0, 2 * Math.PI);
+    ctx4.fillStyle = "#ff96aa";
+    ctx4.fill();
+
+    // Draw an orange triangle
+    ctx4.beginPath();
+    ctx4.moveTo(200, 50);
+    ctx4.lineTo(250, 150);
+    ctx4.lineTo(150, 150);
+    ctx4.closePath();
+    ctx4.fillStyle = "#ff8539";
+    ctx4.fill();
+
+    // Draw a cyan rectangle
+    ctx4.beginPath();
+    ctx4.rect(50, 200, 200, 100);
+    ctx4.fillStyle = "#39aaff";
+    ctx4.fill();
+
+    // Draw a green ellipse
+    ctx4.beginPath();
+    ctx4.ellipse(250, 300, 50, 30, 0, 0, 2 * Math.PI);
+    ctx4.fillStyle = "#aaff96";
+    ctx4.fill();
+</script>
+
+<canvas id="myCanvas6" width="350" height="400"></canvas>
+
+<script>
+    var canvas6 = document.getElementById("myCanvas6");
+    var ctx6 = canvas6.getContext("2d");
+
+    // Draw a starburst effect
+    ctx6.beginPath();
+    ctx6.moveTo(175, 50);
+    ctx6.lineTo(215, 150);
+    ctx6.lineTo(300, 160);
+    ctx6.lineTo(230, 210);
+    ctx6.lineTo(250, 300);
+    ctx6.lineTo(175, 250);
+    ctx6.lineTo(100, 300);
+    ctx6.lineTo(120, 210);
+    ctx6.lineTo(50, 160);
+    ctx6.lineTo(135, 150);
+    ctx6.closePath();
+    ctx6.fillStyle = "#ffcc00";
+    ctx6.fill();
+</script>
+
+<canvas id="myCanvas9" width="350" height="400"></canvas>
+
+<script>
+    var canvas9 = document.getElementById("myCanvas9");
+    var ctx9 = canvas9.getContext("2d");
+
+    // Draw a cosmic-inspired abstract nebula
+    ctx9.beginPath();
+    ctx9.moveTo(175, 200);
+    for (let i = 0; i < 360; i += 5) {
+        let radius = 80 + Math.random() * 40; // Varying radius for a cosmic effect
+        let x = 175 + radius * Math.cos((i * Math.PI) / 180);
+        let y = 200 + radius * Math.sin((i * Math.PI) / 180);
+        ctx9.lineTo(x, y);
+    }
+    ctx9.closePath();
+    ctx9.fillStyle = "#330033";
+    ctx9.fill();
+</script>
+
+
+
+
